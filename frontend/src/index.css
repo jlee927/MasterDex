@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* Ensures there's no default white space */
+@theme {
+    --font-primary: "Poppins", sans-serif
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
