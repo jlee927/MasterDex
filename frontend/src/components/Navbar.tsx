@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
 
       {/* Nav Links */}
       <div className="flex text-xl items-center space-x-6">
-        <a href="#" className="hover:underline">Dashboard</a>
+        <a href="#" className="hover:underline">My Binders</a>
         <a href="#" className="hover:underline">About</a>
         <a href="#" className="hover:underline">Trading</a>
         <a href="#" className="hover:underline">Contact</a>

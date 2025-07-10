@@ -2,6 +2,7 @@ import { FiSearch } from 'react-icons/fi';
 import bg_pokeball from '../assets/pokeball-background.png';
 import bg_pokemon from '../assets/background-pokemon.png';
 import svGen from '../assets/other/Pokemon-Scarlet-Violet.webp';
+import { Link } from 'react-router-dom'
 
 interface GenerationCardProps {
   icon: string;
@@ -18,9 +19,13 @@ const GenerationCard: React.FC<GenerationCardProps> = ({ icon, title, generation
         <p className="text-sm text-gray-500">Gen {generation}</p>
         <h2 className="text-lg font-bold">{title}</h2>
       </div>
-      <button className="bg-[#316BBD] text-white text-sm w-full py-2 px-4 rounded-md text-center">
-        Browse &gt;
-      </button>
+
+
+      <Link to="/sets">
+        <button className="cursor-pointer bg-[#316BBD] text-white text-sm w-full py-2 px-4 rounded-md text-center">
+          Browse &gt;
+        </button>
+      </Link>
     </div>
   );
 };
@@ -32,21 +37,21 @@ const Generations: React.FC = () => {
       <img
         src={bg_pokeball}
         alt="Pokeball"
-        className="absolute top-[5%] right-[-5%] w-[400px] h-[400px] object-contain z-0 opacity-25 pointer-events-none"
+        className="absolute top-[5%] right-[-5%] w-[400px] h-[400px] object-contain z-0 opacity-35 pointer-events-none"
       />
       <img
         src={bg_pokeball}
         alt="Pokeball"
-        className="absolute top-[45%] right-[15%] w-[600px] h-[600px] object-contain z-0 opacity-25 pointer-events-none"
+        className="absolute top-[45%] right-[15%] w-[600px] h-[600px] object-contain z-0 opacity-35 pointer-events-none"
       />
       <img
         src={bg_pokemon}
         alt="Pokemon"
-        className="absolute bottom-[-10%] left-[-5%] w-[350px] h-[350px] object-contain z-0 opacity-25 pointer-events-none"
+        className="absolute bottom-[-10%] left-[-5%] w-[350px] h-[350px] object-contain z-0 opacity-35 pointer-events-none"
       />
 
       {/* Main Content Wrapper */}
-      <div className="relative z-10 px-10 py-10 max-w-7xl mx-auto">
+      <div className="justify-center relative z-10 px-10 py-10 max-w-7xl mx-auto">
         <h1 className="text-3xl font-bold text-[#2B4F81] mb-6">Browse Generations</h1>
 
         {/* Search Bar */}

@@ -1,5 +1,5 @@
 import blastoise from "../assets/blas.png"; // Replace with your actual image path
-import logo from "../assets/masterdex-logo.png"; // Replace with your actual image path
+import logo from "../assets/logos/masterdex-logo.png"; // Replace with your actual image path
 import icon1 from "../assets/masterdex_icon_1_notext.png"
 import icon2 from "../assets/masterdex_icon_2_notext.png"
 import icon3 from "../assets/masterdex_icon_3_notext.png"
@@ -69,7 +69,6 @@ const Home: React.FC = () => {
             alt="Blastoise Card"
             className="w-52 md:w-60 rotate-[10deg] mt-8 mr-60 shadow-md hover:shadow-2xl transition duration-300 ease-in-out"
           />
-
         </div>
       </div>
 

@@ -3,7 +3,10 @@ import Navbar from './components/Navbar'
 import Navbar2 from './components/Navbar2'
 import Home from './pages/Home'
 import Generations from './pages/Generations'
+import Sets from './pages/Sets'
+import SetView from './pages/SetView'
 import Footer from './components/Footer'
+
 
 import {
   BrowserRouter,
@@ -23,7 +26,7 @@ function App() {
 
 function Layout() {
   const location = useLocation();
-  const originalNavbarPath = ["/", "/home"]; // add "/" if Home is at root
+  const originalNavbarPath = ["/"]; // add "/" if Home is at root
 
   const showOriginal = originalNavbarPath.includes(location.pathname);
 
@@ -33,6 +36,8 @@ function Layout() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/generations" element={<Generations />} />
+        <Route path="/sets" element={<Sets />} />
+        <Route path="/set-view" element={<SetView />} />
       </Routes>
     </div>
   );
