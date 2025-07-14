@@ -129,7 +129,7 @@ const Sets: React.FC = () => {
                     className="w-30 h-30 rounded-md object-cover"
                   />
                   <div className="ml-4">
-                    <Link to="/">
+                    <Link to="/set-view">
                       <h3 className="font-bold text-lg text-[#2B4F81]">
                         Scarlet & Violet Base
                       </h3>
