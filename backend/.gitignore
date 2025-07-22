@@ -1,1 +1,6 @@
 queries
+.env
+.DS_Store
+app/tools
+queries-remove-later
+database-remove-later
