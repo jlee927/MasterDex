@@ -1,6 +1,8 @@
 from flask import Flask
 from flask_restful import Api
 from flask_cors import CORS
+import app.models
+
 
 from app.api.sets import IMAGES_ROUTES
 

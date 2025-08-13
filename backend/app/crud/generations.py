@@ -20,4 +20,7 @@ def get_generation():
 
     return res
 
-get_generation()
+generations = get_generation()
+
+# print(generations[1].name)
+
